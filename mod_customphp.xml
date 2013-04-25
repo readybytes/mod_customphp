@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site">
+	<name>mod_customphp</name>
+	<author>Team ReadyBytes</author>
+	<creationDate>March 2012</creationDate>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>team@readybytes.in</authorEmail>
+	<version>0.1</version>
+	<description>Custom PHP Module</description>
+	<files>
+		<filename module="mod_customphp">mod_customphp.php</filename>
+		<filename>index.html</filename>
+		<folder>files</folder>
+	</files>
+
+	<help key="https://github.com/readybytes/Custom-Module" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="includefile" type="text"
+					label="relative file name to include" description="" />
+			</fieldset>
+			<fieldset
+				name="advanced">
+				
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>
+

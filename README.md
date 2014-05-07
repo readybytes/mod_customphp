@@ -1,6 +1,5 @@
 
 ##Custom PHP Module for Joomla CMS
------
 
 This module help in creating number of modules using PHP files.
 
@@ -11,14 +10,14 @@ This module help in creating number of modules using PHP files.
 
 
 ###Installation
---------------
+
 
 1. Download the zip https://github.com/readybytes/mod_customphp/archive/master.zip
 2. Install from backend
 
 
 ###Usage
-------
+
 
 1. You need to create a PHP file e.g. `login.php` in `[website-root]/modules/mod_customphp/files`
 2. Now to use this file 
